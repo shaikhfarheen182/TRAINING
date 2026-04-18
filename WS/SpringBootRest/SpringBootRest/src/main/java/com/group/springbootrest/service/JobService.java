@@ -19,6 +19,7 @@ public class JobService {
 	}
 	
 	public List<JobPost>getAllJobs(){
+		System.out.println("jobs");
 		return repo.getAllJobs();
 	}
 }
