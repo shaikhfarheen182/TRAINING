@@ -2,12 +2,20 @@ package com.group.springbootrest.model;
 
 import java.util.List;
 
-public class JobPost {
+import jakarta.persistence.ElementCollection;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
+
+@Entity
+public class JobPost {
+	
+	@Id
     private int postId;
     private String postProfile;
     private String postDesc;
     private Integer reqExperience;
+    @ElementCollection
     private List<String> postTechStack;
 
     public JobPost() {}

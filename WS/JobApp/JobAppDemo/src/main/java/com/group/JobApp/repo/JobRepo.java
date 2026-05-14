@@ -1,15 +1,14 @@
 package com.group.JobApp.repo;
 
 import org.springframework.stereotype.Repository;
-
+import org.springframework.data.jpa.repository.JpaRepository;
 import com.group.JobApp.model.JobPost;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 @Repository
-public class JobRepo {
+public  interface JobRepo extends JpaRepository<JobPost,Integer> {
 
 
     // ArrayList to store JobPost objects
